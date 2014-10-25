@@ -1,0 +1,165 @@
+.wrapper {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: orange;
+	margin-left: -8px;
+	margin-top: -8px;
+}
+
+.header {
+    position: relative;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+}
+
+.logo {
+    position: absolute;
+    height: 100px;
+    width: 440px;
+    background-color: green;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.nav-social {
+    position: relative;
+    height: 100px;
+    width: 700px;
+    background-color: purple;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.social-icons {
+	position: relative;
+	height: 30px;
+	width: 160px;
+	background-color: yellow;
+    float: right;
+}
+
+.navigation {
+	position: relative;
+	height: 40px;
+	width: 700px;
+	background-color: pink;
+	margin-top: 60px;
+}
+
+.navigation ul {
+	list-style: none;
+	margin-left: -30px;
+	padding-top: 8px;
+}
+
+.navigation ul li {
+	display: inline;
+	background-color: gray;
+	margin-right: 20px;
+	font-size: 26px;
+	font-family: Arial;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+}
+
+.content {
+    position: relative;
+    height: 500px;
+    width: 70%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/*--- FOR IPHONE AND OTHER SMART PHONES --- */
+@media (max-width: 480px) {
+    .header {
+    	background-color: salmon;
+    	height: 420px;
+    	margin-top: -60px;
+    }
+
+    .logo {
+    	position: absolute;
+    	margin-top: 70px;
+        margin-left: 10%;
+        margin-right: 10%;
+    	width: 320px;
+    }
+
+    .nav-social {
+    	position: absolute;
+    	width: 320px;
+    	height: 185px;
+    	float: none;
+    	margin-top: 170px;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+
+    .navigation {
+    	width: 320px;
+    	height: 100%;
+    }
+
+    .navigation ul {
+		list-style: none;
+		margin-left: -30px;
+		padding-top: 8px;
+    }
+
+    .navigation ul li {
+		display: block;
+		background-color: gray;
+		margin-right: 20px;
+		font-size: 20px;
+		font-family: Arial;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+    }
+
+    .content {
+	    position: relative;	
+	    width: 320px;
+    }
+
+}
+
+/* FOR IPADS */
+@media (min-width: 700px) and (max-width: 768px) {
+    .header {
+    	background-color: white;
+    }
+
+    .logo {
+    	height: 75px;
+    	width: 330px;
+    }
+
+    .nav-social {
+    	width: 400px;
+    }
+
+    .navigation {
+    	width: 400px;
+    }
+
+    .navigation ul li {
+    	font-size: 20px;
+    	padding-left: 2px;
+    	padding-right: 2px;
+    	margin-right: 5px;
+    }
+}
