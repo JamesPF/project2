@@ -1,0 +1,81 @@
+Back end stuff
+
+Have a logout button at the top left of each page
+
+login page
+- name
+- email
+- password
+— submit -> takes you to ‘options’ page of ‘news posts’ or ‘tour dates’
+
+‘options’ page for picking between ‘news posts’ or ‘tour dates’
+says something like “I want to…”
+- post/edit/delete a piece of news
+- post/edit/delete tour dates
+-> takes you to whichever option you select
+
+‘news posts’ page
+displays a list of each news story on the site, with the following options
+- view post -> takes you to the live post on the site
+- edit post -> takes you to an ‘edit post’ page 
+- delete post -> asks if you’re sure, deletes post, back to ‘news posts’ page
+- new post -> takes you to a ‘compose post’ page
+- go to ‘tour dates’ page -> takes you to tour dates editing page
+
+     ‘new post’ page
+     allows you to
+     - set the date
+     - create a title
+     - create a post
+     - hit submit -> takes you to ‘post submitted’ page
+
+          ‘post submitted’ page
+          allows you to
+          - go back to ‘news posts’ page
+          - go to ‘news’ page on website
+
+     ‘edit post’ page
+     allows you to
+     - edit the post date
+     - edit the title
+     - edit the post
+     - hit submit -> takes you to ‘all edits made’ page
+
+          ‘all edits made’ page
+          allows you to
+          - go back to ‘news posts’ page
+          - go to ‘news’ page on website
+
+‘tour dates’ page
+displays a list of all tour dates, with the following options
+- view tour dates -> takes you to the tour dates page on the site
+- edit tour date -> takes you to a page where you can edit a tour date
+- delete tour date -> asks if you’re sure, delates date, back to ‘tour dates’ page
+- new tour date -> takes you to a ‘new tour date’ page
+- go to ‘news posts’ page -> takes you to news posts editing page
+
+     ‘new tour date’ page
+     allows you to
+     - set venue
+     - set city
+     - set date
+     - set time
+     - hit submit -> takes you to ‘date added’ page
+
+          ‘date submitted’ page
+          allows you to
+          - go back to ‘tour dates’ page
+          - view ‘tour’ page on website
+
+     ‘edit tour date’ page
+     allows you to
+     - edit venue
+     - edit city
+     - edit date
+     - edit time
+     - hit submit -> takes you to ‘all tour date edits made’ page
+
+          ‘date updated’ page
+          allows you to
+          - go back to ‘tour dates’ page
+          - view ‘tour’ page on website
