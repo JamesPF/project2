@@ -1,0 +1,38 @@
+h1 {
+	text-align: center;
+	font-family: Arial;
+}
+
+.page-contents {
+	background-color: orange;
+	width: 50%;
+	height: 75%;
+	margin: 0 auto;
+}
+
+.new-entry {
+	position: absolute;
+	font-family: Arial;
+	padding-left: 5px;
+	padding-top: 2px;
+}
+
+.nav-button {
+	position: relative;
+	float: right;
+	font-family: Arial;
+	margin-top: -15px;
+	padding-right: 5px;
+	padding-top: 2px;
+}
+
+.page-contents table {
+	background-color: red;
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.page-contents table th {
+	text-align: left;
+}
