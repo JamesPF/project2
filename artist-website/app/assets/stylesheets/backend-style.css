@@ -8,6 +8,7 @@ h1 {
 	width: 50%;
 	height: 75%;
 	margin: 0 auto;
+	border-radius: 5px;
 }
 
 .new-entry {
@@ -31,8 +32,28 @@ h1 {
 	position: relative;
 	width: 100%;
 	margin-top: 10px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 .page-contents table th {
 	text-align: left;
+}
+
+.field {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+.actions {
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-top: -7px;
+}
+
+.back-button {
+	float: right;
+	padding-right: 8px;
+	padding-top: 3px;
+	font-family: Arial;
 }

@@ -2,24 +2,29 @@
 
   <h1>Create a New Date</h1>
 
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.text_field :date %>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
-  </div>
-  <div class="field">
-    <%= f.label :venue %><br>
-    <%= f.text_field :venue %>
-  </div>
-  <div class="field">
-    <%= f.label :time %><br>
-    <%= f.text_field :time %>
-  </div>
-  <br>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="page-contents">
+    <div class="back-button">
+      <%= link_to 'Back to Shows', tourdate_path %>
+    </div>
+    <div class="field">
+      <%= f.label :date %><br>
+      <%= f.text_field :date, placeholder: 'DD/MM/YY' %>
+    </div>
+    <div class="field">
+      <%= f.label :city %><br>
+      <%= f.text_field :city %>
+    </div>
+    <div class="field">
+      <%= f.label :venue %><br>
+      <%= f.text_field :venue %>
+    </div>
+    <div class="field">
+      <%= f.label :time %><br>
+      <%= f.text_field :time %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit "Create New Show" %>
+    </div>
   </div>
 <% end %>
