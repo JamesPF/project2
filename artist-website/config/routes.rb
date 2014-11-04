@@ -8,4 +8,13 @@ Rails.application.routes.draw do
 
   post 'tourdate/new_tourdate' => 'tourdate#new_tourdate', as: :new_tourdate
 
+
+  get 'post/index' => 'post#index', as: :post
+
+  get 'post/new' => 'post#new', as: :addpost
+
+  post 'post/new_post' => 'post#new_post', as: :new_post
+
+  # get 'post/one' => 'post#one', as: :one
+
 end

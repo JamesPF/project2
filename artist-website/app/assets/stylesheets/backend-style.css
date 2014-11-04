@@ -14,17 +14,18 @@ h1 {
 .new-entry {
 	position: absolute;
 	font-family: Arial;
-	padding-left: 5px;
-	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-top: 5px;
 }
 
 .nav-button {
 	position: relative;
 	float: right;
 	font-family: Arial;
-	margin-top: -15px;
-	padding-right: 5px;
-	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-right: 8px;
+	padding-top: 5px;
 }
 
 .page-contents table {
@@ -45,6 +46,13 @@ h1 {
 	padding-top: 5px;
 }
 
+.text-area {
+	position: relative;
+	width: 75%;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
 .actions {
 	padding-left: 10px;
 	padding-bottom: 10px;
@@ -54,6 +62,39 @@ h1 {
 .back-button {
 	float: right;
 	padding-right: 8px;
-	padding-top: 3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font-family: Arial;
+}
+
+
+.options {
+	background-color: green;
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 5%;
+}
+
+.left {
+	background-color: orange;
+	width: 40%;
+	float: left;
+}
+
+.left p {
+	font-family: Arial;
+	font-size: 30px;
+	text-align: center;
+}
+
+.right {
+	background-color: orange;
+	width: 40%;
+	float: right;
+}
+
+.right p {
+	font-family: Arial;
+	font-size: 30px;
+	text-align: center;
 }
