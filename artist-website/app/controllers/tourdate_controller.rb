@@ -1,14 +1,18 @@
 class TourdateController < ApplicationController
 
   def index
-  	@tourdates = Tourdate.all
+  	@tourdate = Tourdate.all
+  end
+
+  def show
+  @tourdate = Tourdate.find(params[:id])
   end
 
   def new
   	@tourdate = Tourdate.new
   end
 
-  def new_tourdate
+  def create
   	@tourdate = Tourdate.new(tourdate_params)
 
   	if @tourdate.save
@@ -20,6 +24,25 @@ class TourdateController < ApplicationController
 
   def tourdate_params
   	params.require(:tourdate).permit(:date, :city, :venue, :time)
+  end
+
+  def edit
+    @tourdate = Tourdate.find(params[:id])
+  end
+
+  def update
+    @tourdate = Tourdate.find(params[:id])
+    if @tourdate.update_attributes(params.require(:tourdate).permit(:date, :city, :venue, :time))
+      redirect_to tourdate_path
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @tourdate = Tourdate.find(params[:id])
+    @tourdate.destroy
+    redirect_to tourdate_path
   end
 
 end

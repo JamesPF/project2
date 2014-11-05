@@ -21,12 +21,15 @@
 			   <th>Time</th>
 			  </tr>
 			</thead>
-			<%@tourdates.each do |tourdate| %>
+			<%@tourdate.each do |tourdate| %>
 			   <tr>
 			   <td><%= tourdate.date %></td>
 			   <td><%= tourdate.city %></td>
 			   <td><%= tourdate.venue %></td>
 			   <td><%= tourdate.time %></td>
+			   <td><%= link_to 'Show', single_tourdate_path(tourdate) %></td>
+			   <td><%= link_to 'Edit', edit_tourdate_path(tourdate) %></td>
+			   <td><%= link_to 'Delete', tourdate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 			   </tr>
 			<% end %>
 			</table>
