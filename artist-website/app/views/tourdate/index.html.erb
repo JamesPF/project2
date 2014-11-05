@@ -29,7 +29,7 @@
 			   <td><%= tourdate.time %></td>
 			   <td><%= link_to 'Show', single_tourdate_path(tourdate) %></td>
 			   <td><%= link_to 'Edit', edit_tourdate_path(tourdate) %></td>
-			   <td><%= link_to 'Delete', tourdate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			   <td><%= link_to 'Delete', delete_tourdate_path(tourdate), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 			   </tr>
 			<% end %>
 			</table>

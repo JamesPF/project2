@@ -4,5 +4,21 @@
   	<div class="back-button">
       <%= link_to 'Back to Posts', post_path %>
     </div>
-    <%= render 'form' %>
+    <%= form_for(@post, :url => {:action => :update, :controller => :post} ) do |p| %>
+	<div class="field">
+	  <%= p.label :date %><br>
+	  <%= p.text_field :date, placeholder: 'MM/DD/YY' %>
+	</div>
+	<div class="field">
+	  <%= p.label :title %><br>
+	  <%= p.text_field :title %>
+	</div>
+	<div class="text-area">
+	  <%= p.label :content %><br>
+	  <%= p.text_area :body, :size =>'90%x20%' %>
+	</div>
+	<div class="actions">
+	  <%= p.submit "Update Post" %>
+	</div>
+<% end %>
   </div>
