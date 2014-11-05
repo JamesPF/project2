@@ -1,4 +1,6 @@
-<h1> <%= @tourdate.date %> </h1>
-<p>This show is on <%= @tourdate.date %> in <%= @tourdate.city %> at <%= @tourdate.venue %> and starts at <%= @tourdate.time %>. </p>
+<h1> <%= @tourdate.venue %>, <%= @tourdate.date %> </h1>
+<div class="page-contents">
+  <p>This show is on <%= @tourdate.date %> in <%= @tourdate.city %> at <%= @tourdate.venue %> and starts at <%= @tourdate.time %>. </p>
 
-<%= link_to "Back to Shows", tourdate_path %>
+  <p><%= link_to "Back to Shows", tourdate_path %></p>
+</div>

@@ -1,5 +1,7 @@
 <h1> <%= @post.title %> </h1>
-<%= @post.date %>
-<p><%= @post.body %></p>
+<div class="page-contents">
+  <p><%= @post.date %></p>
+  <p><%= @post.body %></p>
 
-<%= link_to "Back to Posts", post_path %>
+  <p><%= link_to "Back to Posts", post_path %></p>
+</div>
