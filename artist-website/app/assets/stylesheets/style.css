@@ -65,6 +65,11 @@
 	padding-right: 5px;
 }
 
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     position: absolute;
     height: 100%;

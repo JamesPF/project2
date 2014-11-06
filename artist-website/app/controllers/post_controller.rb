@@ -1,12 +1,12 @@
 class PostController < ApplicationController
 
 	def index
-		@post = Post.all
+	    @post = Post.all
 	end
 
 	def show
-    @post = Post.find(params[:id])
-  end
+        @post = Post.find(params[:id])
+    end
 
 	def new
 		@post = Post.new
@@ -25,26 +25,26 @@ class PostController < ApplicationController
 	end
 
 	def post_params
-			params.require(:post).permit(:date, :title, :body)
+	    params.require(:post).permit(:date, :title, :body)
 	end
 
 	def edit
-    @post = Post.find(params[:id])
-  end
-
-  def update
-    @post = Post.find(params[:id])
-    if @post.update_attributes(params.require(:post).permit(:date, :title, :body))
-      redirect_to post_path
-    else
-      render 'edit'
+      @post = Post.find(params[:id])
     end
-  end
 
-  def destroy
-    @post = Post.find(params[:id])
-    @post.destroy
-    redirect_to post_path
-  end
+    def update
+      @post = Post.find(params[:id])
+      if @post.update_attributes(params.require(:post).permit(:date, :title, :body))
+        redirect_to post_path
+      else
+        render 'edit'
+      end
+    end
+
+    def destroy
+      @post = Post.find(params[:id])
+      @post.destroy
+      redirect_to post_path
+    end
 
 end

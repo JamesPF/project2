@@ -38,16 +38,21 @@ Rails.application.routes.draw do
   #These routes determine the front end
   root 'application#index'
 
-  get 'about/' => 'application#about'
+  get 'about/' => 'application#about', as: :about
 
-  get 'news/' => 'application#news'
+ # get 'news/' => 'application#news'
 
-  get 'shows/' => 'application#shows'
+  get 'shows/' => 'application#shows', as: :shows
 
-  get 'music/' => 'application#music'
+  get 'music/' => 'application#music', as: :music
 
-  get 'video/' => 'application#video'
+  get 'video/' => 'application#video', as: :video
 
-  get 'photos/' => 'application#photos'
+  get 'photos/' => 'application#photos', as: :photos
+
+
+  #For News
+
+  get 'news/index' => 'news#index', as: :news
 
 end
