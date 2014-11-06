@@ -42,7 +42,7 @@ Rails.application.routes.draw do
 
  # get 'news/' => 'application#news'
 
-  get 'shows/' => 'application#shows', as: :shows
+ # get 'shows/' => 'application#shows'
 
   get 'music/' => 'application#music', as: :music
 
@@ -54,5 +54,7 @@ Rails.application.routes.draw do
   #For News
 
   get 'news/index' => 'news#index', as: :news
+
+  get 'shows/index' => 'shows#index', as: :shows
 
 end
