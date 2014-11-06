@@ -87,6 +87,43 @@ a, a:visited, a:hover, a:active {
     margin-top: 30px;
 }
 
+.news-content {
+    position: relative;
+    height: 500px;
+    width: 60%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.news-post {
+    background-color: orange;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tour-dates {
+    position: relative;
+    height: 500px;
+    width: 40%;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.tour-dates h1 {
+    padding-top: 10px;
+}
+
+.tour-dates table {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* MEDIA QUERIES BEGIN HERE */
 /* THE FIRST SEVERAL... UP UNTIL IPADS... ARE FOR BREAKPOINTS FOR THE HEADER */
 

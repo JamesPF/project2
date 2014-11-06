@@ -26,24 +26,20 @@
 			</div>
 		</div>
 		<div class="container">
-			<div class="content">
+			<div class="news-content">
+				<h1>Latest News</h1>
 	            <div class="post-list">
-				<table>
-				<thead>
-					<tr>
-					<th>Date</th>
-					<th>Title</th>
-					<th>Content</th>
-					</tr>
-					</thead>
+
 					<%@post.each do |post| %>
-					<tr>
-					<td><%= post.date %></td>
-					<td><%= post.title %></td>
-					<td><%= post.body %></td>
-					</tr>
+                    <div class="news-post">
+					<%= post.date %>
+					<%= post.title %>
+                    <br>
+					<%= post.body %>
+				    </div>
+                    <br><br>
 				<% end %>
-				</table>
+
 	         </div>
 			</div>
 		</div>
