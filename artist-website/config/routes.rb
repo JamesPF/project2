@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'home#index'
+  # root 'home#index'
+  get 'home/' => 'home#index'
 
   # These routes are for shows
   get 'tourdate/' => 'tourdate#index', as: :tourdate
@@ -32,5 +33,21 @@ Rails.application.routes.draw do
   patch 'post/:id' => 'post#update', as: :update_post
 
   delete 'post/:id' => 'post#destroy', as: :delete_post
+
+
+  #These routes determine the front end
+  root 'application#index'
+
+  get 'about/' => 'application#about'
+
+  get 'news/' => 'application#news'
+
+  get 'shows/' => 'application#shows'
+
+  get 'music/' => 'application#music'
+
+  get 'video/' => 'application#video'
+
+  get 'photos/' => 'application#photos'
 
 end
