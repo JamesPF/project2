@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
 
-  # root 'home#index'
-  get 'home/' => 'home#index'
+  get 'admin-login' => 'sessions#new', as: :admin_login
+
+  get 'logout' => 'sessions#destroy', as: :logout
+
+  get 'signup' => 'users#new', as: :sign_up
+  resources :users
+  resources :sessions
+
+  #These are for creating a user and logging in
+
+
+  # This is for the back end homepage
+  get 'home/' => 'home#index', as: :home
 
   # These routes are for shows
   get 'tourdate/' => 'tourdate#index', as: :tourdate
@@ -40,9 +51,10 @@ Rails.application.routes.draw do
 
   get 'about/' => 'application#about', as: :about
 
- # get 'news/' => 'application#news'
+  # These two were replaced by the other two routes for News and Shows below
+  # get 'news/' => 'application#news'
 
- # get 'shows/' => 'application#shows'
+  # get 'shows/' => 'application#shows'
 
   get 'music/' => 'application#music', as: :music
 
@@ -51,7 +63,7 @@ Rails.application.routes.draw do
   get 'photos/' => 'application#photos', as: :photos
 
 
-  #For News
+  #For News and Shows
 
   get 'news/index' => 'news#index', as: :news
 
