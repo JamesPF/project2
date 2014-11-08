@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
 
-  get 'admin-login' => 'sessions#new', as: :admin_login
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'admin-login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  get 'logout' => 'sessions#destroy', as: :logout
-
-  get 'signup' => 'users#new', as: :sign_up
   resources :users
   resources :sessions
-
-  #These are for creating a user and logging in
 
 
   # This is for the back end homepage

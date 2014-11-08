@@ -1,31 +1,12 @@
 class User
-  attr_accessor :password
-
   include Mongoid::Document
+  include ActiveModel::SecurePassword
   field :email, type: String
-  field :password_hash, type: String
-  field :password_salt, type: String
+  field :password_digest, type: String
 
-  before_save :encrypt_password
+  has_secure_password
 
-  validates_confirmation_of :password
-  validates_presence_of :password, :on => :create
-  validates_presence_of :email
+  # attr_accessible :email, :password, :password_confirmation
+
   validates_uniqueness_of :email
-
-  def self.authenticate(email, password)
-  	user = find_by_email(email)
-  	if user && user.password_hash == BCrypt::Engine.hash_secret(password, user.password_salt)
-  		user
-  	else
-  		nil
-  	end
-  end
-
-  def encrypt_password
-  	if password.present?
-  		self.password_salt = BCrypt::Engine.generate_salt
-  		self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)
-  	end
-  end
 end

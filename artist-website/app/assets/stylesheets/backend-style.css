@@ -103,3 +103,19 @@ h1 {
 	font-size: 30px;
 	text-align: center;
 }
+
+.login-info {
+	background-color: orange;
+	width: 15%;
+	height: 75%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.login-info .field {
+    margin: 0 auto;
+}
+
+.login-info .actions {
+	margin-top: 15px;
+}
