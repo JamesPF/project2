@@ -145,7 +145,7 @@ a, a:visited, a:hover, a:active {
     }
 }
 
-@media (max-width: 1050px) {`
+@media (max-width: 1050px) {
     .nav-social {
         width: 47%;
     }
